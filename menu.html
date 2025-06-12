@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de la Cafetería</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            line-height: 1.6;
+            padding: 20px;
+            color: #333;
+            background-image: url("Fondo_02.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        section {
+            margin-bottom: 30px;
+            border: 2px solid #a0522d;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .item {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            color: #0a0400;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0a0400;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        section:nth-child(1) { background-color: rgba(255, 228, 181, 0.6); }
+        section:nth-child(2) { background-color: rgba(255, 179, 186, 0.6); }
+        section:nth-child(3) { background-color: rgba(178, 247, 188, 0.6); }
+
+        .producto {
+            font-weight: bold;
+        }
+
+
+        @media (max-width: 600px) {
+            .category-container {
+                grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Menú de la Cafetería</h1>
+
+    <section>
+        <h2>Bebidas</h2>
+        <div class="category-container">
+            <div class="item"><span class="producto">Café Americano</span> - $32.50</div>
+            <div class="item"><span class="producto">Café con Leche</span> - $53.00</div>
+            <div class="item"><span class="producto">Cappuccino</span> - $77.00</div>
+            <div class="item"><span class="producto">Latte</span> - $50.00</div>
+            <div class="item"><span class="producto">Macchiato</span> - $66.00</div>
+            <div class="item"><span class="producto">Mocha</span> - $40.00</div>
+            <div class="item"><span class="producto">Café Negro</span> - $60.00</div>
+            <div class="item"><span class="producto">Café Descafeinado</span> - $65.00</div>
+            <div class="item"><span class="producto">Café de olla</span> - $80.00</div>
+            <div class="item"><span class="producto">Café clásico</span> - $80.00</div>
+            <div class="item"><span class="producto">Chocolate</span> - $80.00</div>
+            <div class="item"><span class="producto">Té (Manzanilla, limón, negro, verde)</span> - $80.00</div>
+            <div class="item"><span class="producto">Frappe de Frutas</span> - $80.00</div>
+            <div class="item"><span class="producto">Chocolate Italiano</span> - $80.00</div>
+            <div class="item"><span class="producto">Café Latte</span> - $80.00</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Postres</h2>
+        <div class="category-container">
+            <div class="item"><span class="producto">Pastel de Chocolate</span> - $74.00</div>
+            <div class="item"><span class="producto">Pastel de Queso</span> - $55.00</div>
+            <div class="item"><span class="producto">Brownie</span> - $30.00</div>
+            <div class="item"><span class="producto">Galletas</span> - $16.00</div>
+            <div class="item"><span class="producto">Pie de Manzana</span> - $45.00</div>
+            <div class="item"><span class="producto">Flan</span> - $25.00</div>
+            <div class="item"><span class="producto">Helado</span> - $33.00</div>
+            <div class="item"><span class="producto">Tiramisú</span> - $40.00</div>
+            <div class="item"><span class="producto">Milky Way</span> - $20.00</div>
+            <div class="item"><span class="producto">Pay de Queso</span> - $33.00</div>
+            <div class="item"><span class="producto">Pay de Queso con Zarzamora</span> - $25.00</div>
+            <div class="item"><span class="producto">Pay de Queso con Fresa</span> - $20.00</div>
+            <div class="item"><span class="producto">Galletas Tradicionales</span> - $10.00</div>
+            <div class="item"><span class="producto">Bisquet</span> - $50.00</div>
+            <div class="item"><span class="producto">Pan Dulce relleno</span> - $15.00</div>
+            <div class="item"><span class="producto">Helado sencillo</span> - $22.00</div>
+            <div class="item"><span class="producto">Strudel de Manzana</span> - $20.00</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Licuados</h2>
+        <div class="category-container">
+            <div class="item"><span class="producto">Licuado de fresa</span> - $34.00</div>
+            <div class="item"><span class="producto">Licuado de plátano (o con avena)</span> - $34.00</div>
+            <div class="item"><span class="producto">Licuado de mango</span> - $50.00</div>
+            <div class="item"><span class="producto">Licuado de chocolate</span> - $74.00</div>
+            <div class="item"><span class="producto">Licuado de frutas mixtas</span> - $30.00</div>
+            <div class="item"><span class="producto">Licuado verde</span> - $66.00</div>
+            <div class="item"><span class="producto">Licuado de proteína</span> - $54.00</div>
+            <div class="item"><span class="producto">Smoothie de bayas</span> - $60.00</div>
+            <div class="item"><span class="producto">Licuado de Mamey</span> - $80.00</div>
+            <div class="item"><span class="producto">Licuado de Avena</span> - $60.00</div>
+        </div>
+    </section>
+</body>
+</html>

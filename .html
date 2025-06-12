@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería</title>
+    <style>
+        body {
+            font-family: 'Bagel_Fat_One', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF8DC;
+        }
+
+        header {
+            background-color: #D2B48C;
+            color: white;
+            padding: 10px 0;
+            display: flex;            
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0; 
+        }
+
+        header > * { 
+            margin: 0 10px;
+        }
+
+        .subtitulo {
+            font-size: 1.5em;        }
+
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin-bottom: 0px;
+            background-color: white;
+            padding: 0px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            color: #664422;
+        }
+
+        .item img {
+            max-width: 70%;
+            height: auto;
+        }
+
+        .background-image {
+            background-image: url('granos.png');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            width: 100%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-image p {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .menu-link {
+          display: inline-block;
+          margin-top: 10px;
+        }
+
+        .menu-link img {
+          width: 100px;
+          height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <img src="cato_03.png" alt="cato_03.png" style="float: left;">
+        <h1>Coffe Cat</h1>
+        <p class="subtitulo">El mejor cafe con la mejor compañía</p>
+        <a href="menu.html" class="menu-link">
+          <img src="menu_gatito.png" alt="Menú">
+        </a>
+    </header>
+
+    <div class="background-image">
+        <p>Si eres amante del café y los lindos Gatitos. Este es el lugar para ti</p>
+    </div>
+
+    <section>
+        <div class="item">
+            <a href="contactanos.html"><img src="gatito2.png" alt="Gatito 1"></a>
+            <h3>Acerca de nosotros</h3>
+            <p>Somos una empresa que busca la mayor comodidad del cliente.</p>
+        </div>
+        <div class="item">
+            <a href="contactanos.html"><img src="gatito.png" alt="Gatito 2"></a>
+            <h3>Contáctanos</h3>
+            <p>55-3142-1942</p>
+        </div>
+        <!-- Agrega más items aquí -->
+    </section>
+</body>
+</html>
